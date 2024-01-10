@@ -1,0 +1,24 @@
+.live__currency::before{
+  content: "Real-time Data (UTC-4h)";
+  background-color: white;
+  border: 1px solid #eee;
+  height: 50px;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  padding: 4px 8px;
+}
+
+iframe {
+  position: relative;
+  top: -50px;
+}
+
+.live__currency.crypto {
+  height: 360px;
+}
+.live__currency.fx {
+  height: 295px;
+}
