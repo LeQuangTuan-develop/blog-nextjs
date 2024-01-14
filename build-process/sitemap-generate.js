@@ -10,7 +10,7 @@ const distFolder = path.join(process.cwd(), 'public/sitemap.xml');
 
 const getPagesData = async function () {
     try {
-        let apiUrl = 'https://divupro-apidjangobe-production.up.railway.app/v1/api-blog-fxeater/'
+        let apiUrl = 'https://blog-django-production-ff19.up.railway.app/v1/api-blog-fxeater/'
 
         let response = await fetch(apiUrl);
         let jsonData = await response.json();
@@ -25,7 +25,7 @@ const getPagesData = async function () {
             }
         );
 
-        apiUrl = 'https://divupro-apidjangobe-production.up.railway.app/v1/api-chart-pattern/'
+        apiUrl = 'https://blog-django-production-ff19.up.railway.app/v1/api-chart-pattern/'
 
         response = await fetch(apiUrl);
         jsonData = await response.json();
@@ -61,7 +61,7 @@ async function main() {
             //build index item
             url: [
                 {
-                    loc: "https://www.fxeater.com",
+                    loc: "https://blog-django-production-ff19.up.railway.app/",
                 },
                 {
                     lastmod: get_last_mod(pages)
@@ -73,7 +73,7 @@ async function main() {
         {
             url: [
                 {
-                    loc: "https://www.fxeater.com/about",
+                    loc: "https://blog-django-production-ff19.up.railway.app/about",
                 },
                 {
                     lastmod: get_last_mod(pages)
@@ -89,8 +89,8 @@ async function main() {
             url: [
                 {
                     loc: item.type == 1
-                        ? `https://www.fxeater.com/blog/${item.id}-${slugify(item.title, { locale: 'vi' }).toLowerCase()}`
-                        : `https://www.fxeater.com/learn/learn-chart/${item.id}-${slugify(item.title, { locale: 'vi' }).toLowerCase()}`,
+                        ? `https://blog-django-production-ff19.up.railway.app/blog/${item.id}-${slugify(item.title, { locale: 'vi' }).toLowerCase()}`
+                        : `https://blog-django-production-ff19.up.railway.app/learn/learn-chart/${item.id}-${slugify(item.title, { locale: 'vi' }).toLowerCase()}`,
                 },
                 {
                     lastmod: new Date(item.lastModified ?? item.created)

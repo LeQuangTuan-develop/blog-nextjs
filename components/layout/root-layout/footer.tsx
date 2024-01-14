@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="mb-14 w-full [border-bottom:1px_solid_rgb(100,_112,_132)] mt-16"></div>
         <div className="flex-row flex justify-between max-[767px]:flex-col max-[767px]:items-start">
           <div className="w-full max-w-[640px] max-[991px]:mr-4 max-[991px]:flex-initial max-[767px]:mr-0">
-            <h2 className="font-bold text-3xl md:text-3xl">Mastering MQL5 with FxEater</h2>
+            <h2 className="font-bold text-3xl md:text-3xl">Mastering Investing with FxEater</h2>
           </div>
         </div>
         <div className="mb-14 w-full [border-bottom:1px_solid_rgb(100,_112,_132)] mt-16">
